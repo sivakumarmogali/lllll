@@ -1,0 +1,16 @@
+name: build
+
+on:
+ push: 
+   branches: ["main"]
+ push_request:
+   branches: ["main"]
+   
+jobs:
+ build:
+  run-on: ubutu-latest
+   steps:
+     -uses: actions/checkout@v3
+     -name:
+      run: echo this is my first action
+   
